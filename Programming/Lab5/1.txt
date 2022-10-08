@@ -1,0 +1,15 @@
+execute_script
+C:/Users/bezym/Desktop/Laba5/2.txt
+show
+help
+add
+name
+-0
+-0
+123
+abvdsdsg
+GREEN
+VATICAN
+-0
+-0
+-0

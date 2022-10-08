@@ -1,0 +1,5 @@
+help
+execute_script
+C:/Users/bezym/Desktop/Laba5/1.txt
+execute_script
+C:/Users/bezym/Desktop/Laba5/3.txt
