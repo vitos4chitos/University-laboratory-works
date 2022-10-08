@@ -1,2 +1,2 @@
 # Description
-System and application software 2 year. Web programming
+Laboratory work for 2 year of study. Web programming
