@@ -1,0 +1,71 @@
+Information about teams
+Help command: output help
+by available commands
+
+Info command: output to standard
+output stream information about the collection
+
+Show command: output to standard
+output stream all items in the collection
+in a string view
+
+Add command: add a new item to the collection
+
+Update id command: update the value of a collection item,
+whose id is equal to the specified one
+
+Remove_by_id command: delete item
+from the collection by its id
+
+Clear command: clear the collection
+Execute_script:: read and execute the script
+from the specified file. The script contains commands
+in the same format,
+in which they are entered by the user in interactive mode.
+
+Add_if_max command: add
+a new item in the collection, if its value is
+exceeds the value of the largest item in this collection
+
+Remove_lower command: delete
+from the collection, all items smaller than
+the specified one
+by the height field
+
+History command: output
+the last 10 commands (without their arguments)
+
+The Search command: allows you to find objects
+in the collection
+fields that are equal to or begin with
+the specified fields
+
+Filter_by_height command: output elements, value
+fields whose height is equal to the specified value
+
+Print_unique_location command: output unique
+values of the location field
+
+To edit your own elements in the database
+you must specify
+all necessary fields at the top of the
+table(id, name, etc.)
+
+Format for setting fields:
+id-integer, name-string, coordinates -
+an int number and a double number,
+height-a double number, passportId-a
+string of up to 20 characters,
+hairColor - [GREEN, WHITE, BROWN], nationality -
+[JAPAN, VATICAN,THAILAND],
+location-a float number and two long numbers, user -
+your username(optional);
+
+Table search format:
+In the same cells as the field assignments,
+write what you want
+what you want to find-the table will do
+everything for you.
+
+Filters are reset after each command that
+interacts with the Database

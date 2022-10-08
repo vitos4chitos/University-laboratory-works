@@ -1,0 +1,73 @@
+Informace o týmech
+Tým help: vyvolejte nápovědu
+podle dostupných příkazů
+
+Příkaz info: zobrazit jako standardní
+Výstupní proud informace o sbírce
+
+Příkaz show: výstup na standardní
+Výstupní proud všechny položky kolekce
+ve strunové reprezentaci
+
+Příkaz Přidat: Přidat novou položku do sbírky
+
+Příkaz update id: aktualizovat hodnotu
+položky kolekce,
+id, které se rovná danému
+
+Příkaz remove_by_id: odstranit položku
+z kolekce podle jeho id
+
+Příkaz clear: Vyčistit sbírku
+Příkaz execute_script:: počítat a spustit skript
+ze zadaného souboru. Skript obsahuje
+příkazy ve stejné podobě,
+ve kterém je uživatel zadá interaktivně.
+
+Příkaz add_if_max: přidat
+nová položka v kolekci, pokud je její hodnota
+převyšuje hodnotu největší položky této kolekce
+
+Příkaz remove_lower: odstranit
+z kolekce jsou všechny položky menší
+než přednastavené
+přes pole height
+
+Tým historie: vyvedení
+posledních 10 týmů (bez jejich argumentů)
+
+Příkaz Search: umožňuje najít objekty ve sbírce
+pole, která jsou rovna danému nebo začínají
+
+Příkaz filter_by_height: vyvést
+položky, hodnotu
+pole height, která se rovná danému
+
+Příkaz print_unique_location:
+vyvolejte jedinečné
+hodnoty pole umístění
+
+Chcete-li upravit položky v databázi,
+musíte zadat
+všechna potřebná pole v horní části
+tabulky (id, name atd.)
+
+Formát úlohy polí:
+ID-celé číslo, name-řetězec, coordinates -
+počet typu int a počet typu double,
+height-číslo typu double,
+passportId-řádek až 20 znaků,
+hairColor - [GREEN, WHITE, BROWN],
+nationality -
+[JAPAN, VATICAN,THAILAND],
+location-číslo typu float a dvě
+čísla typu long, user -
+vaše přihlášení (není nutné);
+
+Formát vyhledávání podle tabulky:
+Ve stejných buňkách jako úlohy polí,
+zaznamenávejte to,
+co chcete najít - tabulka udělá všechno za vás.
+
+Filtry jsou resetovány po každém příkazu,
+který komunikuje s databází

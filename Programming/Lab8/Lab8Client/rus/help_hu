@@ -1,0 +1,72 @@
+Információk a csapatokról
+Súgó parancs: kimeneti Súgó
+a rendelkezésre álló parancsokkal
+
+Info parancs: kimenet a standardra
+kimeneti adatfolyam információk a gyűjteményről
+
+Parancs megjelenítése: kimenet normál értékre
+kimeneti adatfolyam a gyűjtemény összes eleme
+karakterlánc nézetben
+
+Parancs hozzáadása: új elem hozzáadása a gyűjteményhez
+
+Update id parancs: a gyűjtemény elem értékének frissítése,
+amelynek azonosítója megegyezik a megadott azonosítóval
+
+Remove_by_id parancs: elem törlése
+a gyűjtemény a saját id
+
+Parancs törlése: a gyűjtemény törlése
+Execute_script:: a parancsfájl elolvasása
+és végrehajtása
+a megadott fájlból. A parancsfájl azonos
+formátumú parancsokat tartalmaz,
+amikor a felhasználó interaktív módban adja meg azokat.
+
+Add_if_max parancs: Hozzáadás
+új tétel a gyűjteményben, ha értéke
+meghaladja a gyűjtemény legnagyobb tételének értékét
+
+Remove_lower parancs: törlés
+a gyűjteményből minden, a megadott tételnél kisebb elem
+a magasság mező
+
+Előzmények parancs: kimenet
+az utolsó 10 parancs (argumentumok nélkül)
+
+A keresési parancs: lehetővé teszi objektumok
+keresését a gyűjteményben
+a megadott mezőkkel megegyező vagy azzal
+kezdődő mezők
+
+Filter_by_height parancs: kimeneti elemek, érték
+olyan mezők, amelyek magassága megegyezik
+a megadott értékkel
+
+Print_unique_location parancs: egyedi kimenet
+a hely mező értékei
+
+Az adatbázis saját elemeinek szerkesztéséhez
+meg kell adnia
+minden szükséges mező a táblázat tetején
+(azonosító, név stb.)
+
+A mezők beállításának formátuma:
+id-egész, név-karakterlánc, koordináták -
+int-szám és kettős szám,
+magasság-egy dupla szám, passportId-egy sor
+legfeljebb 20 karakter,
+hairColor - [zöld, fehér, barna], állampolgárság -
+[JAPÁN, VATIKÁN, THAIFÖLD],
+hely-úszó szám és két hosszú szám, felhasználó -
+a felhasználónév (opcionális);
+
+Táblázatkeresési formátum:
+A mezőkiosztásokkal azonos cellákban írja le,
+amit szeretne
+amit meg akarsz találni, az asztal mindent
+meg fog tenni érted.
+
+A szűrők alaphelyzetbe kerülnek az
+adatbázissal kapcsolatba kerülő parancsok után

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #DED09F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphics.controllers.TableController">
+   <children>
+      <ImageView fitHeight="708.0" fitWidth="1342.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picks/MainBackground.jpg" />
+         </image>
+      </ImageView>
+      <HBox layoutX="14.0" layoutY="623.0" prefHeight="33.0" prefWidth="904.0">
+         <children>
+            <Button fx:id="AddButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="126.0" text="Add" />
+            <Button fx:id="RemoveByIdButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="126.0" text="Remove by id" />
+            <Button fx:id="ClearButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="126.0" text="Clear" />
+            <Button fx:id="HelpButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="126.0" text="Help" />
+            <Button fx:id="InfoButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="126.0" text="Info" />
+            <Button fx:id="UpdateIdButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="126.0" text="Update id" />
+            <Button fx:id="ExecuteScriptButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="126.0" text="Execute_script" />
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="656.0" prefHeight="33.0" prefWidth="904.0">
+         <children>
+            <Button fx:id="AddIfMaxButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="126.0" text="Add if max" />
+            <Button fx:id="RemoveLowerButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="126.0" text="Remove lower" />
+            <Button fx:id="HistroyButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="126.0" text="History" />
+            <Button fx:id="UniqueLocationButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="126.0" text="Print unique location">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="ShowButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="126.0" text="Show" />
+            <MenuButton fx:id="SortMenu" mnemonicParsing="false" prefHeight="32.0" prefWidth="126.0" text="Sorted By">
+              <items>
+                <MenuItem fx:id="SortId" mnemonicParsing="false" text="id" />
+                <MenuItem fx:id="SortName" mnemonicParsing="false" text="name" />
+                  <MenuItem fx:id="SortCoor" mnemonicParsing="false" text="coordinates" />
+                  <MenuItem fx:id="SortCreat" mnemonicParsing="false" text="Creation date" />
+                  <MenuItem fx:id="SortHeight" mnemonicParsing="false" text="Height" />
+                  <MenuItem fx:id="SortPass" mnemonicParsing="false" text="Passport Id" />
+                  <MenuItem fx:id="SortHair" mnemonicParsing="false" text="Haircolor" />
+                  <MenuItem fx:id="SortNat" mnemonicParsing="false" text="Nationality" />
+                  <MenuItem fx:id="SortLoc" mnemonicParsing="false" text="location" />
+                  <MenuItem fx:id="SortUser" mnemonicParsing="false" text="user" />
+                  <MenuItem fx:id="DefaultSort" mnemonicParsing="false" text="Default" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="SearchMenu" mnemonicParsing="false" prefHeight="32.0" prefWidth="127.0" text="Search">
+              <items>
+                  <MenuItem fx:id="SearchId" mnemonicParsing="false" text="id" />
+                  <MenuItem fx:id="SearchName" mnemonicParsing="false" text="name" />
+                  <MenuItem fx:id="SearchCoor" mnemonicParsing="false" text="coordinates" />
+                  <MenuItem fx:id="SearchDate" mnemonicParsing="false" text="Creation date" />
+                  <MenuItem fx:id="SearchHeight" mnemonicParsing="false" text="Height" />
+                  <MenuItem fx:id="SearchPassport" mnemonicParsing="false" text="Passport Id" />
+                  <MenuItem fx:id="SearchHair" mnemonicParsing="false" text="Haircolor" />
+                  <MenuItem fx:id="SearchNat" mnemonicParsing="false" text="Nationality" />
+                  <MenuItem fx:id="Searchloc" mnemonicParsing="false" text="location" />
+                  <MenuItem fx:id="searchUser" mnemonicParsing="false" text="user" />
+                  <MenuItem fx:id="DefaultSerch" mnemonicParsing="false" text="Default" />
+              </items>
+            </MenuButton>
+         </children>
+      </HBox>
+      <TextArea fx:id="outputField" layoutX="920.0" layoutY="83.0" prefHeight="534.0" prefWidth="406.0" promptText="There are your answers" />
+      <Button fx:id="ExitButton" layoutX="1238.0" layoutY="667.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Exit" />
+      <Text fx:id="AnswerT" layoutX="918.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Answers">
+         <font>
+            <Font name="Nirmala UI Bold" size="48.0" />
+         </font>
+      </Text>
+      <TabPane layoutX="14.0" layoutY="83.0" prefHeight="534.0" prefWidth="892.0" style="-fx-background-color: #DED09F;" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="TableTab" text="Table">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="497.0" prefWidth="910.0">
+                     <children>
+                        <TableView fx:id="dbTable" layoutY="31.0" onMouseClicked="#showFromTable" prefHeight="476.0" prefWidth="904.0" style="-fx-background-image: graphics\picks\MainBackground.jpg;">
+                           <columns>
+                              <TableColumn fx:id="idColoumn" prefWidth="61.0" text="id" />
+                              <TableColumn fx:id="nameColoumn" prefWidth="66.0" text="name" />
+                              <TableColumn fx:id="coordColoumn" prefWidth="90.0" text="coordinates" />
+                              <TableColumn fx:id="creatColoumn" prefWidth="85.0" text="creatdate" />
+                              <TableColumn fx:id="heightColoumn" prefWidth="57.0" text="height" />
+                              <TableColumn fx:id="passportColoumn" prefWidth="79.0" text="passport" />
+                              <TableColumn fx:id="haircolorColoumn" prefWidth="84.0" text="haircolor" />
+                              <TableColumn fx:id="nationalityColoumn" prefWidth="117.0" text="nationality" />
+                              <TableColumn fx:id="locationColoumn" prefWidth="116.0" text="location" />
+                              <TableColumn fx:id="userColoumn" prefWidth="136.0" text="user" />
+                           </columns>
+                        </TableView>
+                        <HBox prefHeight="31.0" prefWidth="896.0">
+                           <children>
+                              <TextField fx:id="idField" prefHeight="31.0" prefWidth="59.0" promptText="id" />
+                              <TextField fx:id="nameField" prefHeight="31.0" prefWidth="69.0" promptText="name" />
+                              <TextField fx:id="coordField" prefHeight="31.0" prefWidth="87.0" promptText="coordinates" />
+                              <TextField fx:id="creatField" prefHeight="31.0" prefWidth="86.0" promptText="creatdate" />
+                              <TextField fx:id="heightField" prefHeight="31.0" prefWidth="58.0" promptText="height" />
+                              <TextField fx:id="passportField" prefHeight="31.0" prefWidth="80.0" promptText="passport" />
+                              <TextField fx:id="haircolorField" prefHeight="31.0" prefWidth="83.0" promptText="haircolor" />
+                              <TextField fx:id="nationalityField" prefHeight="31.0" prefWidth="116.0" promptText="nationality" />
+                              <TextField fx:id="locationField" prefHeight="31.0" prefWidth="114.0" promptText="location" />
+                              <TextField fx:id="userField" prefHeight="31.0" prefWidth="138.0" promptText="user" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="DrawbTab" text="Draw">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Canvas fx:id="canvas" height="502.0" layoutX="21.0" layoutY="-11.0" onMouseClicked="#showPerson" width="890.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Text fill="#ded09f" layoutX="22.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WWTP">
+         <font>
+            <Font name="Nirmala UI Bold" size="53.0" />
+         </font>
+      </Text>
+      <MenuButton fx:id="Languagebuttom" layoutX="705.0" layoutY="35.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="199.0" text="Language">
+         <items>
+            <MenuItem fx:id="rusButton" mnemonicParsing="false" onAction="#rus" text="Русский" />
+            <MenuItem fx:id="CesButton" mnemonicParsing="false" onAction="#ces" text="Český" />
+            <MenuItem fx:id="MagButton" mnemonicParsing="false" onAction="#mag" text="Magyar" />
+            <MenuItem fx:id="engButton" mnemonicParsing="false" onAction="#eng" text="English" />
+         </items>
+         <font>
+            <Font name="Comic Sans MS" size="17.0" />
+         </font>
+      </MenuButton>
+      <Button fx:id="ClearAns" layoutX="1216.0" layoutY="39.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="105.0" text="Clear answers" />
+      <TextField fx:id="filePath" layoutX="920.0" layoutY="624.0" prefHeight="25.0" prefWidth="287.0" promptText="File path to execute" />
+      <TextField fx:id="SearchField" layoutX="920.0" layoutY="660.0" prefHeight="25.0" prefWidth="287.0" promptText="What to search?" />
+   </children>
+</AnchorPane>
