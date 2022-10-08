@@ -1,0 +1,149 @@
+.body {
+    color: white;
+    background: black;
+}
+
+.link:hover, #backlink:hover{
+    color: deeppink;
+}
+
+.header.main{
+    text-align:right;
+}
+
+td{
+    padding: 10px;
+}
+
+.table.results{
+    border: 2px solid white;
+    align-items: center;
+}
+
+#inputxyr{
+    padding: 0px;
+}
+
+
+
+.table{
+    width: 95%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.table.data{
+    margin: 1px;
+    width: 100%;
+}
+
+.header, .values, .table input, .value, .link, #answers, #value_of_y, .clock, #backlink{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    text-shadow: 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 4px #ffffff, 0 0 10px #ff00de, 0 0 13px #ff00de, 0 0 18px #ff00de, 0 0 20px #ff00de, 0 0 30px #ff00de;
+}
+
+.values, .value, #answers, #backlink{
+    font-size: 25px;
+}
+
+.link, .link:visited, #answers, #backlink{
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.value.y{
+    text-shadow: 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 4px #ffffff, 0 0 10px #ff00de, 0 0 13px #ff00de, 0 0 18px #ff00de, 0 0 20px #ff00de, 0 0 30px red;
+    width: 150%;
+}
+
+.valuesxyr td{
+    height: 85px;
+}
+
+#picture{
+    width: 30%;
+}
+
+/*#result_table{*/
+/*    color: white;*/
+/*    font-family: "Helvetica";*/
+/*    font-weight: bold;*/
+/*    font-size: 20px;*/
+/*    text-align: center;*/
+
+/*}*/
+/*td > p{*/
+/*    text-shadow: none;*/
+/*}*/
+
+/*.values td{*/
+/*    width: 33%;*/
+/*}*/
+
+
+.table input{
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    margin: 0 0 0 0;
+    text-align: center;
+
+}
+
+.table input:hover, table.data input:focus, #back:focus, #back:hover{
+    box-shadow: 0 0 5px 2px #ff00de;
+    outline: none;
+}
+
+
+/*.table input[type = "submit"]{*/
+/*    border: none;*/
+/*}*/
+
+
+@keyframes shadow {
+    from{
+        fill-opacity: 0;
+        stroke-opacity: 0;
+    }
+    to {
+        fill-opacity: 100%;
+        stroke-opacity: 100%;
+    }
+}
+.figure:hover{;
+    animation: shadow 700ms infinite alternate linear;
+}
+.figure.square:hover{
+    fill: deeppink;
+    stroke: deeppink;
+}
+.figure.circle:hover{
+    fill: maroon;
+    stroke: maroon;
+}
+
+.figure.triangle:hover{
+    fill: rebeccapurple;
+    stroke: rebeccapurple;
+}
+
+#backlink{
+    text-align: left;
+}
+/*#result_table .values{*/
+/*    word-wrap: break-word;*/
+/*}*/
+
+/*#result_table{*/
+/*    table-layout: fixed;*/
+/*}*/
+
+/*.header.main::before{*/
+/*    content: ' \00AE';*/
+/*}*/

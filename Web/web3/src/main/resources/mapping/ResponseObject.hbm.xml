@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+
+    <class name="Dot" table="dots">
+        <id name="jsessionid" column="jsessionid"/>
+        <property name="x" column="x"/>
+        <property name="y" column="y"/>
+        <property name="r" column="r"/>
+        <property name="result" column="result"/>
+    </class>
+</hibernate-mapping>
