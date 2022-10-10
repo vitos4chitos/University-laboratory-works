@@ -1,2 +1,2 @@
 # Description
-Laboratory work for 2 year of study. Web programming
+Laboratory works for 2 year of study. Web programming
