@@ -1,2 +1,2 @@
 # Description
-Laboratory work for 1 year of study. Java Programming Course.
+Laboratory works for 1 year of study. Java Programming Course.
