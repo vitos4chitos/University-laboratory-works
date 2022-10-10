@@ -1,0 +1,48 @@
+<div>
+  <div class = "header">
+    <button pButton type="button" id = "exit" label="Выйти" class="p-button-raised p-button-rounded p-button" (click)="logOut()"></button>
+  </div>
+  <div class = "headerr">
+    <button pButton type="button" id = "back" label="Назад" class="p-button-raised p-button-rounded p-button" (click)="back()"></button>
+  </div>
+<!--  <div id="result_table">-->
+<!--    <table align="center" id = "table">-->
+<!--      <tr>-->
+<!--        <th class="col1">Id</th>-->
+<!--        <th class="col1">Имя Чиновника</th>-->
+<!--        <th class="col1">Время приема</th>-->
+<!--        <th class="col1">Место в очереди</th>-->
+<!--        <th class="col1">Приоритет</th>-->
+<!--      </tr>-->
+<!--      <tr *ngFor="let point of rows" (click)="onClick(point.id)">-->
+<!--        <td class="col1">{{point.id}}</td>-->
+<!--        <td class="col1">{{point.ofName}}</td>-->
+<!--        <td class="col1">{{point.time}}</td>-->
+<!--        <td class="col1">{{point.place}}</td>-->
+<!--        <td class="columns">{{point.priority}}</td>-->
+<!--      </tr>-->
+<!--    </table>-->
+<!--  </div>-->
+  <div class = "result_table">
+    <p-table [value]="rows" responsiveLayout="scroll">
+      <ng-template pTemplate="header">
+        <tr>
+          <th pSortableColumn="id">Id <p-sortIcon field="Id"></p-sortIcon></th>
+          <th pSortableColumn="ofName">ФИО Чиновника <p-sortIcon field="ФИО"></p-sortIcon></th>
+          <th pSortableColumn="time">Время приема <p-sortIcon field="Время"></p-sortIcon></th>
+          <th pSortableColumn="place">Место в очереди <p-sortIcon field="Место"></p-sortIcon></th>
+          <th pSortableColumn="priority">Приоритет <p-sortIcon field="Приоритет"></p-sortIcon></th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-product>
+        <tr (click)="onClick(product.id)">
+          <td>{{product.id}}</td>
+          <td>{{product.ofName}}</td>
+          <td>{{product.time}}</td>
+          <td>{{product.place}}</td>
+          <td>{{product.priority}}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>

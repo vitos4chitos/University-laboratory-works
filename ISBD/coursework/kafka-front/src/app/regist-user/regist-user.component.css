@@ -1,0 +1,12 @@
+.wrapper{
+  margin-top: 5%;
+}
+
+button{
+  margin-bottom: 1em !important;
+  width: 100% !important;
+}
+
+input:first-child{
+  margin-top: 1em !important;
+}

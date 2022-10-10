@@ -1,0 +1,36 @@
+.wrapper{
+  margin:15% 25% 15% 25%;
+  width:50%;
+}
+
+.header{
+  position: absolute;
+  right: 1%;
+  top: 1%;
+}
+
+button{
+  text-align: center;
+  background-color: black;
+  margin-bottom: 1em !important;
+  border: none;
+  width: 100% !important;
+}
+
+input:first-child{
+  margin-top: 1em !important;
+}
+
+.info {
+  font-family:'Times New Roman', Times, serif;
+  font-weight:bold;
+  font-size:18px;
+  color: white;
+  font-style:normal;
+}
+
+.wrappInfo {
+  background-color: black;
+  display: inline-block;
+  border-radius: 5px;
+}

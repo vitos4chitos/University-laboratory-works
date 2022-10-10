@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <div class="surface-card p-4 shadow-2 border-round w-full lg:w-6">
+    <div>
+      <input id="name" type="text" pInputText class="w-full mb-3" placeholder="Имя справки">
+      <label for="getdate" class="block font-light mb-2">Дата получения</label>
+      <input id="getdate" type="date" pInputText class="w-full mb-3" placeholder="Дата получения">
+      <input id="gavebywho" type="text" pInputText class="w-full mb-3" placeholder="Кем выдан">
+      <input id="sale" type="text" pInputText class="w-full mb-3" placeholder="Скидка в процентах">
+      <input id="prior" type="text" pInputText class="w-full mb-3" placeholder="Приоритет">
+      <div class="button-wrapper">
+        <button pButton pRipple label="Добавить" class="p-button-rounded w-full" (click)="onSubmit()"></button>
+      </div>
+      <div class="button-wrapper">
+        <button pButton pRipple label="Дальше" class="p-button-rounded w-full" (click)="nextStep()"></button>
+      </div>
+    </div>
+  </div>
+</div>

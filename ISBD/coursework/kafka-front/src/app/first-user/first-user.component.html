@@ -1,0 +1,16 @@
+<div class = "header">
+  <button pButton type="button" id = "exit" label="Выйти" class="p-button-raised p-button-rounded p-button" (click)="logOut()"></button>
+</div>
+<div class = "headerr">
+  <button pButton type="button" id = "back" label="Назад" class="p-button-raised p-button-rounded p-button" (click)="back()"></button>
+</div>
+<div id="result_table">
+  <p>Id: {{rows.id}}</p>
+  <p>Имя: {{rows.name}}</p>
+  <p>Фамилия: {{rows.surname}}</p>
+  <p>Документ: {{rows.nameOfDocument}}</p>
+
+</div>
+<div class = "headerr">
+  <button pButton type="button" id = "obs" label="Обслужить" class="p-button-raised p-button-rounded p-button" (click)="onClick(rows.id)"></button>
+</div>

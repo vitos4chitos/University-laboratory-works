@@ -1,0 +1,10 @@
+<div class = "header">
+  <button pButton type="button" id = "exit" label="Выйти" class="p-button-raised p-button-rounded p-button" (click)="logOut()"></button>
+</div>
+<div class = "headerr">
+  <button pButton type="button" id = "back" label="Назад" class="p-button-raised p-button-rounded p-button" (click)="back()"></button>
+</div>
+<div class="wrapper">
+  <button pButton *ngFor="let point of rows" type="button" label = {{point.name}} class="p-button-raised p-button-rounded p-button" (click)="onClick(point.name)"></button>
+</div>
+

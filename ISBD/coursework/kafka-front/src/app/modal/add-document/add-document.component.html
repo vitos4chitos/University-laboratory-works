@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <div class="surface-card p-4 shadow-2 border-round w-full lg:w-6">
+    <div>
+      <div class="dropdown">
+        <p-dropdown id="name" [options]="names" [(ngModel)]="selectedName" placeholder="Имя" [showClear]="true"></p-dropdown>
+      </div>
+
+      <label for="getdate" class="block font-light mb-2">Дата получения</label>
+      <input id="getdate" type="date" pInputText class="w-full mb-3" placeholder="Дата получения">
+
+      <label for="getperiod" class="block font-light mb-2">Срок действия</label>
+      <input id="getperiod" type="date" pInputText class="w-full mb-3" placeholder="Срок действия">
+
+      <input id="gavebywho" type="text" pInputText class="w-full mb-3" placeholder="Кем выдан">
+
+      <div class="button-wrapper">
+        <button pButton pRipple label="Отправить" class="p-button-rounded w-full" (click)="onSubmit()"></button>
+      </div>
+      <div class="button-wrapper">
+        <button pButton pRipple label="Дальше" class="p-button-rounded w-full" (click)="nextStep()"></button>
+      </div>
+    </div>
+  </div>
+</div>

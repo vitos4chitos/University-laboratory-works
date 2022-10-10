@@ -1,0 +1,28 @@
+.result_table{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.header{
+  position: absolute;
+  right: 1%;
+  top: 1%;
+}
+
+.headerr{
+  position: absolute;
+  left: 1%;
+  top: 1%;
+}
+
+button{
+  text-align: center;
+  background-color: black;
+  margin-bottom: 1em !important;
+  border: none;
+  width: 100% !important;
+}
+
+.table_custom {
+  margin-top: 55px;
+}

@@ -1,0 +1,47 @@
+<div class = "header">
+  <button pButton type="button" id = "exit" label="Выйти" class="p-button-raised p-button-rounded p-button" (click)="logOut()"></button>
+</div>
+<div class = "headerr">
+  <button pButton type="button" id = "back" label="Назад" class="p-button-raised p-button-rounded p-button" (click)="back()"></button>
+</div>
+<div id="result_table">
+<!--  <table align="center" id = "table">-->
+<!--    <tr>-->
+<!--      <th class="col1">Id</th>-->
+<!--      <th class="col1">Название</th>-->
+<!--      <th class="col1">Дата получения</th>-->
+<!--      <th class="col1">Срок действия</th>-->
+<!--      <th class="col1">Кем выдано</th>-->
+<!--    </tr>-->
+<!--    <tr *ngFor="let point of rows" (click)="onClick(point.id)">-->
+<!--      <td class="col1">{{point.id}}</td>-->
+<!--      <td class="col1">{{point.name}}</td>-->
+<!--      <td class="col1">{{point.date1}}</td>-->
+<!--      <td class="col1">{{point.date2}}</td>-->
+<!--      <td class="columns">{{point.bywho}}</td>-->
+<!--    </tr>-->
+<!--  </table>-->
+  <div class = "result_table">
+    <p-table [value]="rows" responsiveLayout="scroll">
+      <ng-template pTemplate="header">
+        <tr>
+          <th pSortableColumn="id">Id <p-sortIcon field="Id"></p-sortIcon></th>
+          <th pSortableColumn="name">Название <p-sortIcon field="Название"></p-sortIcon></th>
+          <th pSortableColumn="date1">Дата получения <p-sortIcon field="Дата получения"></p-sortIcon></th>
+          <th pSortableColumn="date2">Срок действия <p-sortIcon field="Срок действия"></p-sortIcon></th>
+          <th pSortableColumn="bywho">Кем выдано <p-sortIcon field="Кем выдано"></p-sortIcon></th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-product>
+        <tr (click)="onClick(product.id)">
+          <td>{{product.id}}</td>
+          <td>{{product.name}}</td>
+          <td>{{product.date1}}</td>
+          <td>{{product.date2}}</td>
+          <td>{{product.bywho}}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>
+

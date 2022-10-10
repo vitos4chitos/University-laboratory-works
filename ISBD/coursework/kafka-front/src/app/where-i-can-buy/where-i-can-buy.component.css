@@ -1,0 +1,26 @@
+table{
+  background: white;
+}
+.header{
+  position: absolute;
+  right: 1%;
+  top: 1%;
+}
+
+.headerr{
+  position: absolute;
+  left: 1%;
+  top: 1%;
+}
+
+button{
+  text-align: center;
+  background-color: black;
+  margin-bottom: 1em !important;
+  border: none;
+  width: 100% !important;
+}
+
+.custom_table {
+  margin-top: 55px;
+}

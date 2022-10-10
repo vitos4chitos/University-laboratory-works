@@ -1,0 +1,24 @@
+.wrapper {
+  margin: 15% 25%;
+  width: 50%;
+}
+
+.header {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+}
+
+button {
+  background-color: black;
+  border: none;
+}
+
+.rightButton {
+  display: flex;
+  align-items: center;
+}
+
+.acceptCustomer {
+  margin-left: -20%;
+}
