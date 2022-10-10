@@ -1,2 +1,2 @@
 # Description
-Laboratory work for 3 year of study. Software testing
+Laboratory works for 3 year of study. Software testing
